@@ -129,7 +129,7 @@
 
 
 		ZeroMemory(&hints, sizeof(hints));
-		hints.ai_family = AF_UNSPEC;
+		hints.ai_family = AF_UNSPEC; // AF_INET << change it to AF_INET if you are using an ip
 		hints.ai_socktype = SOCK_STREAM;
 		hints.ai_protocol = IPPROTO_TCP;
 		hints.ai_flags = AI_PASSIVE;
